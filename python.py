@@ -72,16 +72,16 @@ class Grader():
         num = float(num)
         num = math.trunc(num)
 
-        if(num <= 100 and num >= 90):
-            self.letterGrade = "'A'"
-        elif(num <= 89 and num >= 80):
-            self.letterGrade = "'B'"
-        elif(num <= 79 and num >= 70):
-            self.letterGrade = "'C'"
+        if(num <= 59 and num >= 0):
+            self.letterGrade = "'F'"
         elif(num <= 69 and num >= 60):
             self.letterGrade = "'D'"
+        elif(num <= 79 and num >= 70):
+            self.letterGrade = "'C'"
+        elif(num <= 89 and num >= 80):
+            self.letterGrade = "'B'"
         else:
-            self.letterGrade = "'F'"
+            self.letterGrade = "'A'"
 
 # Creating new class grader object
 newGrader = Grader()
