@@ -43,7 +43,7 @@ class Grader():
             self.gradeQuestion()
 
     def outputPrompt(self):
-        print(f"{self.name}'s grade in {self.course} was a(n) {self.grade} which is a(n) {self.letterGrade}!")
+        print(self.name + "'s " + "grade in " + self.course + " was a(n) " + self.grade + " which is a(n) " + self.letterGrade + "!")
 
     # String validation method
     def stringValidation(self, string):
