@@ -42,6 +42,7 @@ class Grader():
         else:
             self.gradeQuestion()
 
+    # Output final prompt method
     def outputPrompt(self):
         print(self.name + "'s " + "grade in " + self.course + " was a(n) " + self.grade + " which is a(n) " + self.letterGrade + "!")
 
