@@ -2,14 +2,13 @@ class Grader
   # Constructor
   def initialize()
     # Properties
-    @name = ''
+    @name
     @course
     @gradeValue
     @letterGrade
 
     # Calling class methods to run when creating the class
     nameQuestion()
-    outputPrompt()
   end
 
     # Class methods
@@ -41,7 +40,7 @@ class Grader
         # Grade question method
         def gradeQuestion()
 
-            print "What was the grade value? Please enter a value from 0 - 100: "
+            puts "What was the grade value? Please enter a value from 0 - 100: "
             @gradeValue = gets.chomp
 
             if floatValidation(@gradeValue) == true
@@ -53,7 +52,7 @@ class Grader
 
         # Output final prompt method
         def outputPrompt()
-            p "#{@name}'s grade in #{@course} was a(n) #{@gradeValue} which is a(n) #{@letterGrade}!"
+            puts "#{@name}'s grade in #{@course} was a(n) #{@gradeValue} which is a(n) #{@letterGrade}!"
         end
 
         # String validation method
@@ -100,6 +99,7 @@ class Grader
             else
                 @letterGrade = "'A'"
             end
+            outputPrompt()
         end
 end
 

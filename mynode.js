@@ -110,6 +110,3 @@ class Grader {
 }
 // Creating new grader object
 let grader = new Grader();
-
-
-

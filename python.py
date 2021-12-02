@@ -13,7 +13,6 @@ class Grader():
 
         # Calling class methods to run when creating the class
         self.nameQuestion()
-        self.outputPrompt()
 
     # Class methods
     # Student name question method
@@ -84,6 +83,8 @@ class Grader():
             self.letterGrade = "'B'"
         else:
             self.letterGrade = "'A'"
+
+        self.outputPrompt()
 
 # Creating new grader object
 newGrader = Grader()
