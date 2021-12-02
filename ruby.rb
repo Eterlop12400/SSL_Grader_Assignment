@@ -103,4 +103,5 @@ class Grader
         end
 end
 
-test_obj = Grader.new
+# Creating new grader object
+grader_obj = Grader.new

@@ -1,3 +1,4 @@
+# Importing library.
 import math
 
 # Class Grader
@@ -84,6 +85,6 @@ class Grader():
         else:
             self.letterGrade = "'A'"
 
-# Creating new class grader object
+# Creating new grader object
 newGrader = Grader()
 

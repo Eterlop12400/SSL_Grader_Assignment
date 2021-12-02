@@ -1,3 +1,4 @@
+// Importing library.
 const readline = require("readline");
 
 // Creating readline functionality.
@@ -107,7 +108,7 @@ class Grader {
     }
 
 }
-
+// Creating new grader object
 let grader = new Grader();
 
 
