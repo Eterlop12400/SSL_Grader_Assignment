@@ -17,7 +17,7 @@ class Grader():
     # Class methods
     # Student name question method
     def nameQuestion(self):
-        self.name = input("What is your name? If the name is more than 1 word use '_' to connect them. ")
+        self.name = input("What is the student's name? If the student's name is more than 1 word use '_' to connect them. ")
 
         if(self.stringValidation(self.name) == True):
             self.courseQuestion()
@@ -26,7 +26,7 @@ class Grader():
 
     # Course question method
     def courseQuestion(self):
-        self.course = input("What is the course name? If the course is more than 1 word use '_' to connect them. ")
+        self.course = input("What is the assignment name? If the assignment name is more than 1 word use '_' to connect them. ")
 
         if(self.stringValidation(self.course) == True):
             self.gradeQuestion()

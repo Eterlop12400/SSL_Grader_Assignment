@@ -15,7 +15,7 @@ class Grader
     # Class methods
     # Student name question method
     def nameQuestion()
-        puts "What is your name?"
+        puts "What is the student's name?"
         @name = gets.chomp
 
         if stringValidation(@name) == true
@@ -28,7 +28,7 @@ class Grader
         # Course question method
         def courseQuestion()
 
-            puts "What is the course name?"
+            puts "What is the assignment name?"
             @course = gets.chomp
 
             if self.stringValidation(@course) == true

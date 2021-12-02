@@ -21,7 +21,7 @@ class Grader {
 
     // Student name question method.
     nameQuestion() {
-        rl.question('What is your name? ', (name) => {
+        rl.question("What is the student's name? ", (name) => {
            if(this.stringValidation(name) === true) {
                this.name = name;
                this.courseQuestion();
@@ -33,7 +33,7 @@ class Grader {
 
     // Grade question method.
     courseQuestion() {
-        rl.question('What is the course name? ', (course) => {
+        rl.question('What is the assignment name? ', (course) => {
             if(this.stringValidation(course) === true) {
                 this.course = course;
                 this.gradeQuestion();
